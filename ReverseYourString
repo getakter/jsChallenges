@@ -1,0 +1,38 @@
+/*
+*****************
+Reverse String 
+*****************
+*/
+
+/*
+*****************
+Soltuion - 01
+*****************
+*/
+
+function revStr(str) {
+  var finalOutput = "";
+
+  for ( var i = str.length - 1; i >=0; i-- ) {
+     finalOutput += str[i];
+  }
+
+  return finalOutput;
+}
+
+console.log(revStr("Dhaka"))
+
+
+/*
+*****************
+Soltuion - 02
+*****************
+*/
+
+function strRev(str) {
+
+  return str.split("").reverse().join("");
+
+}
+
+console.log(strRev("bangladesh"));
